@@ -3,70 +3,121 @@
 <title>home
 </title>
 <style>
-
-textarea{
-    width: 100%;
-    height: 100px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    resize: none;
-}
-  pre.href{
+pre.href{
       background-color: black;
       margin: 10px 150  10px 150;
       padding: 5px;
       text-align: center;}
-
 a{
   color: white;
   text-decoration: none;}
-
-img.hi{
-    float:left;
-    position: relative;
-    left: 152px;}
-
 pre.box{
-      padding: 12px 10px;
-      margin: 8px 0;
+      padding: 19px 30px;
+      margin: 8px 10px;
       display: inline-block;
       border: 1px solid #ccc;
       border-radius: 4px;
       box-sizing: border-box;
       width:28%;
       height:310px;
-      padding: 50px;
+      padding: 60px;
       float:right;
       position: absolute;
       right:170px;
       border: 2px solid black;
-      outline: 8px solid #F0E68C;
+      outline: 8px solid #FFE766;
       outline-offset: 0px;
       background-color:#FFE766;
-      font-family:Caflisch;}
+      font-style: italic;
+      font-family:Georgia;
+      font-size: 14px;}
+
+textarea{
+    background-color:#FFE766;
+    margin: 8px 0;
+    width: 100%;
+    height: 100px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 14px;
+    resize: none;
+    font-style: italic;
+    font-family:Georgia}
+}
   
+
+img.hi{
+    float:left;
+    position: relative;
+    left: 152px;}
+
+
+button {
+  display: inline-block;
+  border-radius: 2px;
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 32px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-style: italic;
+  font-family:Georgia;
+  font-size: 14px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 </style>
 </head>
 <body>
-<pre class=href><h3><i><a href="hallo.github.io/index.html">Home</a>          <a href="">Collection</a>          <a href="">About Us</a>          <a href="hallo.github.io/contactus.html">Contact Us
+<pre class=href><h3><i><a href="file:///C:/Users/admin/Documents/chiru/website-tamara/home.html">Home</a>          <a href="">Collection</a>          <a href="">About Us</a>          <a href="file:///C:/Users/admin/Documents/chiru/website-tamara/contactus.html">Contact Us
 </a></i></h3></pre>
 <center><img src="coHoF1497803324.jpg" width=13%; height=20%;></img></center><br>
+
 <center><img src="c87ba3ef30b5072fd4bc0657c6a066d8.jpg" width=76%; height=75%;></img></center><br>
 
-<center><c87ba3ef30b5072fd4bc0657c6a066d8.jpg" width=76%; height=75%;></img></center>
+<center><img src="c87ba3ef30b5072fd4bc0657c6a066d8.jpg" width=76%; height=75%;></img></center>
 
 <br><img src="c87ba3ef30b5072fd4bc0657c6a066d8.jpg" class="hi" width=602px; height=332px;></img>
 
-<pre class="box"><i >Be the first to learn about 
+<form><pre class="box">Be the first to learn about 
 the latest trends and 
 special offers
 
-<form><textarea>Subscribe</textarea>
-<input type="submit" value="Submit">
-</form></i></pre>
-
+<textarea cols="20" rows="4">Subscribe</textarea>
+<button type="submit" value="Submit">Submit</button>
+</pre>
+</form>
 </body>
 </html>
